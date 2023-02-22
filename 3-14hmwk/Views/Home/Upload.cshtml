@@ -1,0 +1,23 @@
+﻿@model _3_14hmwk.Models.LinkPassword
+@{
+    ViewData["Title"] = "ViewAll";
+}
+
+
+<div class="row">
+    <div class="col-md-8 offset-md-2 jumbotron">
+        <h3>
+            Thank you for uploading your images,
+            here's the link to share with your friends:
+
+            <br /><br />
+                  <a href="/Home/ViewImageRequest?id=@Model.ImageId">
+                      http://localhost:44347/Home/ViewImageRequest?id=@Model.ImageId
+                  </a>
+
+            <br /><br />
+
+            Make sure to give them the password of "@Model.Password"
+        </h3>
+    </div>
+</div>
